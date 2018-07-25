@@ -543,9 +543,27 @@ h3{margin:0;text-align:center}
   animation: load 5s steps(11, end) infinite;
 }
 
-
-
-
+.typ-text {
+  background-color: black;
+}
+.text-typing
+{
+    width: 40em;
+    color: #EECFBA;
+    font-size: 22px;
+    font-family: 'Marck Script', cursive;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 9s steps(55, end);
+}
+@keyframes type{
+    from { width: 0; }
+}
+ 
+@-webkit-keyframes type{
+    from { width: 0; }
+}
 
 
 
