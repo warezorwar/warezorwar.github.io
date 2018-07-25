@@ -643,8 +643,14 @@ li {
   column-rule-color: #FF9900;
   column-rule-width: 10px;
   column-rule: 10px dotted #FF9900;
+  perspective-origin: bottom left;
+
+
 }
-.test-section:hover {transform: perspective(490px) rotate3d(3330,0,10,10deg);}
+.test-section:hover {
+  transform: perspective(490px) rotate3d(3330,0,10,10deg);
+  
+}
 
 .h1 {
 -webkit-column-span: all; 
@@ -654,6 +660,51 @@ color: #000000;
 }
 
 
+
+.div {
+  height: 130px;
+  width: 250px;  
+}
+/*h3 {
+  margin: 0 0 30px;
+}*/
+.containerA1 {
+  height: 160px;
+  margin: 0 auto 1em;
+  -webkit-perspective: 500px;
+  perspective: 500px;
+  }
+.top, .bottom {
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: rotateX(45deg);
+  transform: rotateX(45deg);
+  border-radius: 2px;
+  -webkit-animation: rotate 5s infinite;
+  animation: rotate 5s infinite;
+}
+.top {
+  background: rgba(255, 239, 0, .9);
+}
+.bottom {
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  background: rgba(255, 37, 134, .9);
+}
+.style-flat .top, .style-flat .bottom {
+  -webkit-transform-style: flat;
+  transform-style: flat;
+}
+.style-3d .top, .style-3d .bottom {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+@keyframes rotate {
+  50% {
+    transform: none;
+    }
+}
 
 
 
