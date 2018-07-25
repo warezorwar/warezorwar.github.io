@@ -488,6 +488,7 @@ h3{margin:0;text-align:center}
   position: relative;
   animation: loader 2s infinite ease-in-out;
 }
+
 .loader span {
   width: 50px;
   height: 50px;
@@ -558,7 +559,9 @@ h3{margin:0;text-align:center}
     animation: type 9s steps(55, end);
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    cursor: pointer;
 }
+.text-typing:hover {animation-play-state: paused;}
 @keyframes type{
     from { width: 0; }
 }
@@ -598,6 +601,8 @@ li:nth-child(5) {background:#FF615B}
   -webkit-animation: shake .7s linear alternate infinite;
   animation: shake .7s linear alternate infinite;
 }
+
+li:hover {animation-play-state: paused;}
 .alternate-reverse li {
   -webkit-animation: shake 0.7s linear alternate-reverse infinite;
   animation: shake 0.7s linear alternate-reverse infinite;
@@ -606,9 +611,14 @@ li:nth-child(5) {background:#FF615B}
   -webkit-animation: shake 0.7s linear normal infinite;
   animation: shake 0.7s linear normal infinite;
 }
+
 .reverse li {
   -webkit-animation: shake 0.7s linear reverse infinite;
   animation: shake 0.7s linear reverse infinite;
+}
+li:hover {animation-play-state: paused;}
+li {
+  cursor: pointer;
 }
 @-webkit-keyframes shake {
   100% {
