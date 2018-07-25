@@ -390,7 +390,7 @@ h1 {font-weight: normal;color: #6A5953}
 
 
 body {margin: 0;overflow-x:hidden}
-.container {
+.container1 {
   margin: 0 auto;
   max-width: 100%;
   width: 100%;
@@ -426,12 +426,14 @@ h3{margin:0;text-align:center}
 .element-1 {
   background: #FFCC00;
 }
+
 .element-2 {
   background: #FF9900;
   -webkit-transform-origin: top left;
   -ms-transform-origin: top left;
   transform-origin: top left;
 }
+
 .element-3 {
   background: #875678;
   -webkit-transform-origin: 110% 110%;
