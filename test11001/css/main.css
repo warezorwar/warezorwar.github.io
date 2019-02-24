@@ -251,7 +251,7 @@ p {
     margin-left: 15%; } }
 
 .block-header {
-  background-image: url(/img/bg-header.png);
+  background-image: url(../img/bg-header.png);
   -webkit-background-size: cover;
           background-size: cover;
   position: relative; }
@@ -276,15 +276,15 @@ p {
   .arows__prev {
     height: 50px;
     width: 50px;
-    background-image: url(/img/left-arow.png); }
+    background-image: url(../img/left-arow.png); }
     .arows__prev:hover {
-      background-image: url(/img/left-arow-hover.png); }
+      background-image: url(../img/left-arow-hover.png); }
   .arows__next {
     height: 50px;
     width: 50px;
-    background-image: url(/img/right-arow.png); }
+    background-image: url(../img/right-arow.png); }
     .arows__next:hover {
-      background-image: url(/img/right-arow-hover.png); }
+      background-image: url(../img/right-arow-hover.png); }
 
 .arows__prev, .arows__next {
   cursor: pointer; }
